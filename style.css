@@ -93,7 +93,7 @@ html{
   padding-bottom: 100px;
 }
 .members h2 {
-  color: #333;
+  color: #555;
 }
 .members .card {
   position: relative;
@@ -137,9 +137,10 @@ html{
 
 
 .contact {
-  background-color: rgb(2, 130, 189); 
+  background: linear-gradient(to bottom, #0078d4, #6a1b9a);
   padding: 50px 0; 
   text-align: center; 
+  color: white;
 }
 
 .contact .container {
@@ -148,15 +149,13 @@ html{
 
 .contact h1 {
   color: black; 
+  font-size: 2.5rem;
 }
 
-.contact h5 {
-  color: black; 
+.contact h5, p {
+  color: #e0e0e0;
 }
 
-.contact p {
-  color: black; 
-}
 
 .contact form {
   margin-top: 30px; 
@@ -164,56 +163,42 @@ html{
 
 .contact input[type="text"],
 .contact textarea {
-  width: 60%; 
-  padding: 10px; 
-  margin-bottom: 15px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  box-sizing: border-box; 
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
-
-
-.contact .bt3{
-  background-color: black;
-  color: white;
-  outline: none;
-  border: none;
-  height: 40px;
-  width: 100px;
-  border-radius: 4px;
-  justify-content: left;
+.contact input[type="text"]:focus,
+.contact textarea:focus {
+  border: 1px solid #ff4081;
+  box-shadow: 0 0 8px rgba(255, 64, 129, 0.5);
 }
-.bt3{
-  background: white;
-  color: black;
-  border:1px solid black;
-}
-@media (max-width: 1280px) {
-  .contact input[type="text"],
-  .contact textarea {
-    width: 100%;
+  .contact .bt3 {
+    background-color: #ff4081;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
-  .main{
-    background: rgb(190, 210, 232);
-    background-size: cover;
-    width: 100%;
-    height: 140vh;
-  }
-  .quote-by{
-    justify-content: right;
-    padding-left: 65%;
-    font-size: 15px;
+  
+  .contact .bt3:hover {
+    background-color: #6a1b9a;
+    transform: translateY(-3px);
   }
 
-}
 @media (max-width: 1024px) {
   .contact input[type="text"],
   .contact textarea {
     width: 100%;
   }
   .main{
-    background: rgb(190, 210, 232);
-    background-size: cover;
     width: 100%;
     height: 250vh;
   }
@@ -237,8 +222,6 @@ html{
     width: 100%;
   }
   .main{
-    background: rgb(190, 210, 232);
-    background-size: cover;
     width: 100%;
     height: 100vh;
   }
@@ -267,8 +250,6 @@ html{
     padding-top: 20px;
   }
   .main{
-    background: rgb(190, 210, 232);
-    background-size: cover;
     width: 100%;
     height: 180vh;
   }
@@ -280,8 +261,6 @@ html{
 }
 @media (max-width: 540px) {
   .main{
-    background: rgb(190, 210, 232);
-    background-size: cover;
     width: 100%;
     height: 180vh;
   }
@@ -304,7 +283,6 @@ html{
     border: none; 
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 11rem;
     display: flex;
   }
@@ -312,8 +290,6 @@ html{
 }
 @media (max-width: 414px) {
   .main{
-    background: rgb(190, 210, 232);
-    background-size: cover;
     width: 100%;
     height: 165vh;
   }
@@ -335,8 +311,7 @@ html{
     margin-bottom: 30px; 
     border: none; 
     justify-content: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 13rem;
+    width: 11rem;
     display: flex;
   }
 
@@ -344,14 +319,12 @@ html{
 @media (max-width: 390px) {
   .nav
   .nav-link{
-    color: black;
     font-size: 0.6rem;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
   }
   .main{
-    background: rgb(190, 210, 232);
     background-size: cover;
     width: 100%;
     height: 210vh;
@@ -374,9 +347,7 @@ html{
     margin-bottom: 30px; 
     border: none; 
     justify-content: center;
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 11rem;
+    width: 9rem;
     display: flex;
   }
 
@@ -387,7 +358,6 @@ html{
     width: 100%;
   }
   .main{
-    background: rgb(190, 210, 232);
     background-size: cover;
     width: 100%;
     height: 260vh;
@@ -396,9 +366,6 @@ html{
     justify-content: right;
     padding-left: 65%;
     font-size: 15px;
-  }
-  .members h1{
-    padding-left: 30%;
   }
 
 }
