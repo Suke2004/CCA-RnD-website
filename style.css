@@ -1,0 +1,404 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: #0078d4; /* Professional blue tone */
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ff4081; /* Vibrant pink */
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+.rnd-corner {
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #ff4081; /* Vibrant pink */
+  color: #ffffff;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.rnd-corner:hover {
+  color: #ffffff;
+  background-color: #6a1b9a; /* Deep purple */
+  transform: translateY(-3px);
+}
+.main{
+  background: linear-gradient(to bottom right, #0078d4, #6a1b9a);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.quote-by{
+  color: #ffffff;
+  justify-content: right;
+  padding-left: 60%;
+  font-size: 30px;
+}
+.members h1{
+  padding-left: 70%;
+  color: #333;
+}
+.about-cell{
+  padding-top:7%;
+  line-height: 37px;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2%;
+  line-height: 50px;
+}
+.members {
+  background-color: #f1f1f1; 
+  padding: 50px 0; 
+  text-align: center; 
+}
+
+.members .container {
+  max-width: 1200px; 
+}
+.arc{
+  display: flex
+}
+.arc-passs{
+  display: flex;
+  padding-bottom: 100px;
+}
+.members h2 {
+  color: #333;
+}
+.members .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 15rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+}
+
+.members .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.members .card:hover {
+  transform: translateY(-10px) rotate(3deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 105, 180, 0.8); /* Adds a glowing border effect */
+}
+
+.members .card:hover img {
+  animation: pulseEffect 1.5s infinite ease-in-out;
+  filter: brightness(1.2) contrast(1.3);
+}
+
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1) rotate(1deg);
+  }
+  100% {
+    transform: scale(1) rotate(-1deg);
+  }
+}
+
+
+.contact {
+  background-color: rgb(2, 130, 189); 
+  padding: 50px 0; 
+  text-align: center; 
+}
+
+.contact .container {
+  max-width: 1200px; 
+}
+
+.contact h1 {
+  color: black; 
+}
+
+.contact h5 {
+  color: black; 
+}
+
+.contact p {
+  color: black; 
+}
+
+.contact form {
+  margin-top: 30px; 
+}
+
+.contact input[type="text"],
+.contact textarea {
+  width: 60%; 
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+}
+
+
+.contact .bt3{
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 4px;
+  justify-content: left;
+}
+.bt3{
+  background: white;
+  color: black;
+  border:1px solid black;
+}
+@media (max-width: 1280px) {
+  .contact input[type="text"],
+  .contact textarea {
+    width: 100%;
+  }
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 140vh;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 65%;
+    font-size: 15px;
+  }
+
+}
+@media (max-width: 1024px) {
+  .contact input[type="text"],
+  .contact textarea {
+    width: 100%;
+  }
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 250vh;
+  }
+  .main .h2{
+    font-size: large;
+  }
+  .members h1{
+    padding-left: 7%;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 65%;
+    font-size: 15px;
+  }
+  
+ 
+}
+@media (max-width: 912px) {
+  .contact input[type="text"],
+  .contact textarea {
+    width: 100%;
+  }
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .members h1{
+    padding-left: 9%;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 65%;
+    font-size: 15px;
+  }
+
+}
+@media (max-width: 768px) {
+  .contact input[type="text"],
+  .contact textarea {
+    width: 100%;
+  }
+  .members h1{
+    padding-left: 10%;
+  }
+  .members .card {
+    width: 100%;
+  }
+  .about .col-lg-7 {
+    padding-top: 20px;
+  }
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 180vh;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 60%;
+    font-size: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 180vh;
+  }
+  .main .h2{
+    font-size: medium;
+  }
+  .members h1{
+    padding-left: 12%;
+  }
+  .about-cell{
+    font-size: medium;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 65%;
+    font-size: 15px;
+  }
+  .members .card {
+    margin-bottom: 30px; 
+    border: none; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 11rem;
+    display: flex;
+  }
+
+}
+@media (max-width: 414px) {
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 165vh;
+  }
+  .main .h2{
+    font-size: medium;
+  }
+  .members h1{
+    padding-left: 20%;
+  }
+  .about-cell{
+    font-size: medium;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 65%;
+    font-size: 15px;
+  }
+  .members .card {
+    margin-bottom: 30px; 
+    border: none; 
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 13rem;
+    display: flex;
+  }
+
+}
+@media (max-width: 390px) {
+  .nav
+  .nav-link{
+    color: black;
+    font-size: 0.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 210vh;
+  }
+  .main .h2{
+    font-size: small;
+  }
+  .about-cell{
+    font-size: small;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 65%;
+    font-size: small;
+  }
+  .members h1{
+    padding-left: 30%;
+  }
+  .members .card {
+    margin-bottom: 30px; 
+    border: none; 
+    justify-content: center;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 11rem;
+    display: flex;
+  }
+
+}
+@media (max-width: 280px) {
+  .contact input[type="text"],
+  .contact textarea {
+    width: 100%;
+  }
+  .main{
+    background: rgb(190, 210, 232);
+    background-size: cover;
+    width: 100%;
+    height: 260vh;
+  }
+  .quote-by{
+    justify-content: right;
+    padding-left: 65%;
+    font-size: 15px;
+  }
+  .members h1{
+    padding-left: 30%;
+  }
+
+}
